@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mod3</title>
+</head>
+<body>
+<script>
+// 1. For loop from 0 to 10: Check if each number is odd or even
+document.write("<h3>Task 1: Odd or Even Check</h3>");
+for (let i = 0; i <= 10; i++) {
+  if (i % 2 === 0) {
+    document.write(i + " is even<br>");
+  } else {
+    document.write(i + " is odd<br>");
+  }
+}
+
+// 2. Prompt the user for a number between 5 and 20, and use a Do While loop 
+//    to display the loop counter from 1 until it reaches myNum
+document.write("<h3>Task 2: Do While Loop</h3>");
+let myNum = parseInt(prompt("Enter a number between 5 and 20:"));
+let counter = 1;
+
+do {
+  document.write(counter + "<br>");
+  counter++;
+} while (counter <= myNum);
+
+// 3. Create an array of subjects and display them
+let subjects = ["Accounting", "Algebra", "Programming", "Art", "Data Analytics"];
+
+// a) Display the array values in a readable format using forEach()
+document.write("<h3>Task 3: Array Values (Readable Format)</h3>");
+subjects.forEach(function(subject) {
+  document.write(subject + "<br>");
+});
+
+document.write("<br>");
+
+// b) Display the array values in a readable format using for loop
+document.write(subjects.join(", "));
+</script>
+</body>
+</html>
